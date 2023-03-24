@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <title>eosjs with scatter and anchor that should still load tables from smart contracts with out user loggedin</title>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- MDB -->
+    <link  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/1.0.0/mdb.min.css" rel="stylesheet"/>
+    <!-- animate.css -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Anchor js -->
+    <script src="https://unpkg.com/anchor-link@next"></script>
+    <script src="https://unpkg.com/anchor-link-browser-transport@next"></script>
+
+    <!-- EOSJS -->
+    <script src='eosjs/eosjs-api.js'></script>
+    <script src='eosjs/eosjs-jsonrpc.js'></script>
+    <script src='eosjs/eosjs-jssig.js'></script>
+    
+    <!-- Scatter and Wallet Logic -->
+    <script src='wallets/scatterjs-core.min.js'></script>
+    <script src='wallets/scatterjs-plugin-eosjs2.min.js'></script>
+    <script src="wallets/wallet.js"></script>
+
+    <!--main.js file to manipulate the index.html -->
+    <script src="js/main.js"></script>
+    
+
+
+  </head>
+<body>
+
+    <div class='container mt-1 pt-1 mb-0 pb-0'>
+        <div class='row row-cols-2 mt-3'>
+            <div class='col d-flex justify-content-center p-0'>
+                <h1 id='areaArray' class='pl-1'>Area</h1>
+            </div>
+            <div class='col d-flex justify-content-center p-0'>
+                <h1 id='marketArray' class='pl-1'>Markets</h1>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
