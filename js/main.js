@@ -6,7 +6,7 @@ function callback_markets(value) {
     let marketName;
     let l = markets.rows.length;
     for (let i = 0; i < l; i++) {
-        marketName = markets.rows[i].name;
+        marketName = markets.rows[i].name + "<br>";
         marketNames.push(marketName);
     }
     document.getElementById('marketArray').innerHTML = marketNames;
